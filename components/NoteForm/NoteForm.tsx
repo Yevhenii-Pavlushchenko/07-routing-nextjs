@@ -1,12 +1,14 @@
 "use client";
 
-import { ErrorMessage, Field, Form, Formik, type FormikHelpers } from "formik";
 import css from "./NoteForm.module.css";
-import { noteTags, type NoteTag } from "../../types/note";
+
+import { ErrorMessage, Field, Form, Formik, type FormikHelpers } from "formik";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { createNote } from "@/lib/api";
-import * as Yup from "yup";
 import { useId } from "react";
+import * as Yup from "yup";
+
+import { createNote } from "@/lib/api";
+import { noteTags, type NoteTag } from "../../types/note";
 
 interface NoteFormValues {
   title: string;

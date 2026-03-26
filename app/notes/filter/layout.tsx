@@ -8,7 +8,7 @@ type Props = {
 export default function NotesLayout({ children, sidebar }: Props) {
     return (
         <section className={css.container}>
-            <aside className={css.sedebar}>{sidebar}</aside>
+            <aside className={css.sidebar}>{sidebar}</aside>
             <div className={css.notesWrapper}>{ children}</div>
         </section>
     )

@@ -1,5 +1,6 @@
-import Link from "next/link"
 import css from "./SideBarNotes.module.css"
+
+import Link from "next/link"
 import { noteTags } from "@/types/note"
 
 export default function SidebarNotes() {
